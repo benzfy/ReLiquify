@@ -1,0 +1,10 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="liquidGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00f2fe;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4facfe;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="512" height="512" rx="100" fill="#2c3e50"/>
+  <path d="M 170 120 L 170 320 Q 170 390 240 390 L 350 390 Q 380 390 380 360 T 350 330 L 240 330 Q 230 330 230 320 L 230 120 Q 230 90 200 90 T 170 120 Z" fill="url(#liquidGradient)" />
+</svg>
