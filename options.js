@@ -22,6 +22,8 @@ document.addEventListener('DOMContentLoaded', () => {
       limhubApiUrl: apiUrl,
       limhubApiKey: apiKey
     }, () => {
+      // 通知 background 更新右键菜单
+      chrome.runtime.sendMessage({ type: 'settingsUpdated' });
       showStatus('设置已保存', 'success');
     });
   });

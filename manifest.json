@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "ReLiquify",
   "version": "1.0",
-  "description": "Convert current page content to Markdown.",
+  "description": "Extract main content from web pages as clean Markdown. Copy to clipboard, download as file, or send to cloud directly.",
   "permissions": [
     "activeTab",
     "scripting",
@@ -10,19 +10,10 @@
     "contextMenus",
     "storage"
   ],
-  "host_permissions": [
-    "<all_urls>"
-  ],
   "background": {
     "service_worker": "background.js"
   },
   "options_page": "options.html",
-  "content_scripts": [
-    {
-      "matches": ["<all_urls>"],
-      "js": ["lib/Readability.js", "lib/turndown.js", "content.js"]
-    }
-  ],
   "action": {
     "default_popup": "popup.html",
     "default_icon": {
